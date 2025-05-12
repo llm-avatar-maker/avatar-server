@@ -60,7 +60,6 @@ router.post('/train', uploadFile, async function (req, res, next) {
 			{
 				headers: form.getHeaders(),
 				timeout: 300000,
-				responseType: 'arraybuffer',
 			}
 		);
 		console.log('[DEBUG] Python API response', pythonApiResponse.data);
